@@ -1,0 +1,122 @@
+/* latest_blog_area */
+.latest_blog_area{
+    padding-bottom: 70px;
+    background: #fefefe;
+    .latest_blog{
+        padding-top: 60px;
+        .blog_content{
+            padding-bottom: 25px;
+            img{
+                max-width: 100%;
+            }
+            .blog_heading{
+                font: 700 18px $roboto;
+                color: $h2;
+                display: block;
+                padding-top: 45px;
+                &:hover, &:focus{
+                    color: $bc;
+                }
+            }
+            h4{
+                font: 400 14px $roboto;
+                color: $p;
+                text-transform: uppercase;
+                padding-top: 25px;
+                a{
+                    font: 400 14px $roboto;
+                    color: $p;
+                    &:hover, &:focus{
+                        color: $bc;
+                    }
+                }
+                span{
+                    color: $bc;
+                    width: 40px;
+                    text-align: center;
+                    display: inline-block;
+                }
+                small{
+                    
+                }
+            }
+            p{
+                font: 400 14px/26px $roboto;
+                color: $p;
+                text-align: justify;
+                padding-top: 30px;
+                a{
+                    font-weight: 700;
+                    color: $h2;
+                    &:hover, &:focus{
+                        color: $bc;
+                    }
+                }
+            }
+        }
+    }
+}
+/* End latest_blog_area */
+
+/* blog_tow_area */
+.blog_tow_area{
+    padding-top: 100px;
+    padding-bottom: 70px;
+    .blog_tow_row{
+        .renovation{ 
+            padding-bottom: 30px;
+            img{
+                max-width: 100%; 
+            }
+            .renovation_content{
+                border: 1px solid #888;
+                padding: 28px;
+                .clipboard{
+                    background: $bc;
+                    border: 1px solid #fff; 
+                    width: 60px;
+                    border-radius: 50%;
+                    display: block;
+                    position: relative; 
+                    margin-top: -60px;
+                    text-align: center;
+                    z-index: 1;
+                    i{
+                        font-size: 24px;
+                        color: #fefefe;
+                        line-height: 60px;
+                    }
+                }
+                .tittle{
+                    font: 700 14px/1 $roboto;
+                    color: $h2;
+                    text-align: left;
+                    text-transform: uppercase;
+                    display: block;
+                    padding-top: 30px;
+                    &:hover, &:focus{
+                        color: $bc; 
+                    }
+                }
+                .date_comment{
+                    padding-top: 20px;
+                    a{
+                        font: 400 14px $roboto;
+                        color: #888;
+                        padding-right: 60px;
+                        i{
+                            padding-right: 10px; 
+                        }
+                    }
+                }
+                p{
+                    font: 400 14px/26px $roboto;
+                    color: $p;
+                    padding-top: 30px;
+                    padding-bottom: 5px;
+                }
+            }
+        }
+    }
+}
+/* End blog_tow_area */
