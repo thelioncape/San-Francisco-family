@@ -1,54 +1,54 @@
 @font-face {
-    font-family: 'SFCompactDisplay-Black';
-    src: url('SF%20Compact/SFCompactDisplay-Black.otf') format('opentype');
-    font-weight: normal;
+    font-family: 'SFCompact';
+    src: url('https://rawcdn.githack.com/windyboy1704/San-Francisco-family/3ddfa8152804ff5571cfef8293dd48440bf15113/https://rawcdn.githack.com/windyboy1704/San-Francisco-family/3ddfa8152804ff5571cfef8293dd48440bf15113/SF%20Compact/SFCompactDisplay-Black.otf') format('opentype');
+    font-weight: 800;
     font-style: normal;
 }
 @font-face {
-    font-family: 'SFCompactDisplay-Bold';
-    src: url('SF%20Compact/SFCompactDisplay-Bold.otf') format('opentype');
-    font-weight: normal;
+    font-family: 'SFCompact';
+    src: url('https://rawcdn.githack.com/windyboy1704/San-Francisco-family/3ddfa8152804ff5571cfef8293dd48440bf15113/SF%20Compact/SFCompactDisplay-Bold.otf') format('opentype');
+    font-weight: 700;
     font-style: normal;
 }
 @font-face {
-    font-family: 'SFCompactDisplay-Heavy';
-    src: url('SF%20Compact/SFCompactDisplay-Heavy.otf') format('opentype');
-    font-weight: normal;
+    font-family: 'SFCompact';
+    src: url('https://rawcdn.githack.com/windyboy1704/San-Francisco-family/3ddfa8152804ff5571cfef8293dd48440bf15113/SF%20Compact/SFCompactDisplay-Heavy.otf') format('opentype');
+    font-weight: 900;
     font-style: normal;
 }
 @font-face {
-    font-family: 'SFCompactDisplay-Light';
-    src: url('SF%20Compact/SFCompactDisplay-Light.otf') format('opentype');
-    font-weight: normal;
+    font-family: 'SFCompact';
+    src: url('https://rawcdn.githack.com/windyboy1704/San-Francisco-family/3ddfa8152804ff5571cfef8293dd48440bf15113/SF%20Compact/SFCompactDisplay-Light.otf') format('opentype');
+    font-weight: 300;
     font-style: normal;
 }
 @font-face {
-    font-family: 'SFCompactDisplay-Medium';
-    src: url('SF%20Compact/SFCompactDisplay-Medium.otf') format('opentype');
-    font-weight: normal;
+    font-family: 'SFCompact';
+    src: url('https://rawcdn.githack.com/windyboy1704/San-Francisco-family/3ddfa8152804ff5571cfef8293dd48440bf15113/SF%20Compact/SFCompactDisplay-Medium.otf') format('opentype');
+    font-weight: 500;
     font-style: normal;
 }
 @font-face {
-    font-family: 'SFCompactDisplay-Regular';
-    src: url('SF%20Compact/SFCompactDisplay-Regular.otf') format('opentype');
-    font-weight: normal;
+    font-family: 'SFCompact';
+    src: url('https://rawcdn.githack.com/windyboy1704/San-Francisco-family/3ddfa8152804ff5571cfef8293dd48440bf15113/SF%20Compact/SFCompactDisplay-Regular.otf') format('opentype');
+    font-weight: 400;
     font-style: normal;
 }
 @font-face {
-    font-family: 'SFCompactDisplay-Semibold';
-    src: url('SF%20Compact/SFCompactDisplay-Semibold.otf') format('opentype');
-    font-weight: normal;
+    font-family: 'SFCompact';
+    src: url('https://rawcdn.githack.com/windyboy1704/San-Francisco-family/3ddfa8152804ff5571cfef8293dd48440bf15113/SF%20Compact/SFCompactDisplay-Semibold.otf') format('opentype');
+    font-weight: 600;
     font-style: normal;
 }
 @font-face {
-    font-family: 'SFCompactDisplay-Thin';
-    src: url('SF%20Compact/SFCompactDisplay-Thin.otf') format('opentype');
-    font-weight: normal;
+    font-family: 'SFCompact';
+    src: url('https://rawcdn.githack.com/windyboy1704/San-Francisco-family/3ddfa8152804ff5571cfef8293dd48440bf15113/SF%20Compact/SFCompactDisplay-Thin.otf') format('opentype');
+    font-weight: 100;
     font-style: normal;
 }
 @font-face {
-    font-family: 'SFCompactDisplay-Ultralight';
-    src: url('SF%20Compact/SFCompactDisplay-Ultralight.otf') format('opentype');
-    font-weight: normal;
+    font-family: 'SFCompact';
+    src: url('https://rawcdn.githack.com/windyboy1704/San-Francisco-family/3ddfa8152804ff5571cfef8293dd48440bf15113/SF%20Compact/SFCompactDisplay-Ultralight.otf') format('opentype');
+    font-weight: 200;
     font-style: normal;
 }
