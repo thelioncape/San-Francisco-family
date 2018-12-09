@@ -1,0 +1,2702 @@
+/*----------------------------------------------------
+@File: Default Styles
+@Author: Colorlib
+@URL:https://colorlib.com
+
+This file contains the styling for the actual theme, this
+is the file you need to edit to change the look of the
+theme.
+
+This files contents are outlined below.
+
+	1. Variables
+	2. Prefix
+	3. header
+	4. Slider
+    5. Builder
+    6. About
+    7. Offer
+    8. Feature
+    9. Services
+    10. Team
+    11. Achievments
+    12. Testimonial
+    13. Gallery
+    14. Blog
+    15. Call
+    16. Construction
+    17. Min-blog
+    18. 404
+    19. Contact
+    20. Footer
+    21. Responsive
+
+
+----------------------------------------------------*/
+/*--------------------------------------------------*/
+@font-face {
+    font-family: 'nintendoNTLG-DB001';
+    src: url('../fonts/nintendoNTLG-DB001.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'nintendoNTLG-DB001';
+    src: url('../fonts/nintendoNTLG-B001.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nintendo_udsg-r_std_003';
+    src: url('../fonts/nintendo_udsg-r_std_003.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx");
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/*Color Variables*/
+::selection {
+  background-color: #2d7d9a;
+  color: #FFFFFF;
+}
+
+/* Button */
+.button_all {
+  font: 700 18px/59px "nintendoNTLG-DB001", sans-serif;
+  width: 180px;
+  text-align: center;
+  background: #2d7d9a;
+  display: block;
+  border: 0;
+  color: #222222;
+  /*text-transform: uppercase;*/
+  position: relative;
+  z-index: 2;
+  padding: 0;
+}
+.button_all:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: #222222;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  right: 0;
+  transform: scaleY(0);
+  transform-origin: 50%;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+.button_all:hover, .button_all:focus {
+  color: #fff !important;
+}
+.button_all:hover:before, .button_all:focus:before {
+  transform: scaleY(1);
+}
+
+/* Section Title*/
+.tittle {
+  text-align: center;
+  /*text-transform: uppercase;*/
+}
+.tittle h2 {
+  font: 400 24px "nintendo_udsg-r_std_003", sans-serif;
+  color: #222222;
+  padding-top: 90px;
+  position: relative;
+}
+.tittle h2:after {
+  content: "";
+  position: absolute;
+  background: #2d7d9a;
+  height: 5px;
+  width: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -30px;
+}
+.tittle h4 {
+  font: 400 14px "nintendoNTLG-DB001", sans-serif;
+  color: #555555;
+  padding-top: 55px;
+}
+
+/* Subtittle */
+.subtittle h2 {
+  font: 700 36px "nintendoNTLG-DB001", sans-serif;
+  color: #222222;
+  /*text-transform: uppercase;*/
+  position: relative;
+  margin-bottom: 20px;
+}
+.subtittle h2:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 80px;
+  background: #222222;
+  left: 0;
+  bottom: -22px;
+}
+.subtittle h5 {
+  font: 400 14px "nintendoNTLG-DB001", sans-serif;
+  color: #555555;
+  padding-top: 22px;
+}
+
+/* Preloader */
+.preloader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  background-color: #ffffff;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url(../images/preloader.gif);
+}
+
+/*--------------------------------------------------*/
+/*Prefix Styles*/
+.m0 {
+  margin: 0;
+}
+
+.p0 {
+  padding: 0;
+}
+
+body {
+  font-family: "nintendoNTLG-DB001", sans-serif;
+  /*Section Fix*/
+}
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  margin: 0;
+}
+body p {
+  font-family: "nintendoNTLG-DB001", sans-serif;
+  line-height: 26px;
+  color: #555555;
+  margin: 0;
+}
+body section.row, body header.row, body footer.row {
+  margin: 0;
+}
+
+/*Ancore*/
+a, .btn, button {
+  outline: none;
+  transition: all 300ms linear 0s;
+}
+a:before, a:after, .btn:before, .btn:after, button:before, button:after {
+  transition: all 300ms linear 0s;
+}
+a:focus, a:hover, .btn:focus, .btn:hover, button:focus, button:hover {
+  outline: none;
+  text-decoration: none;
+  transition: all 300ms linear 0s;
+}
+
+/*--------------------------------------------------*/
+/* Top header */
+.top_header_area {
+  background: #111f29;
+}
+.top_header_area .top_nav li a {
+  font: 400 14px/50px "nintendoNTLG-DB001", sans-serif;
+  color: #fff;
+  padding: 0;
+  padding-left: 30px;
+}
+.top_header_area .top_nav li a i {
+  color: #2d7d9a;
+  font-size: 18px;
+  padding-right: 10px;
+}
+.top_header_area .top_nav li a:hover, .top_header_area .top_nav li a:focus {
+  background-color: transparent;
+  color: #2d7d9a;
+}
+.top_header_area .top_nav li:first-child a {
+  padding: 0;
+}
+.top_header_area .social_nav {
+  margin: 0;
+  padding-top: 12px;
+}
+.top_header_area .social_nav li a {
+  font-size: 14px;
+  color: #fff;
+  padding: 0;
+  text-align: center;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+.top_header_area .social_nav li a i {
+  line-height: 24px;
+}
+.top_header_area .social_nav li a:hover, .top_header_area .social_nav li a:focus {
+  background: #2d7d9a;
+  color: #111f29;
+}
+
+/* End Top header */
+/* Top header 2 */
+.top_header_area.top_header {
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
+}
+.top_header_area.top_header .right_top_header {
+  background: #111f29;
+  display: block;
+  overflow: hidden;
+  padding-left: 20px;
+}
+.top_header_area.top_header .right_top_header:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 50%;
+  background: #111f29;
+  height: 50px;
+  z-index: -1;
+}
+
+/* End Top header 2 */
+/* Header Aera */
+.header_aera {
+  background: #fff;
+  border-radius: 0;
+  border: 0;
+  margin: 0;
+  width: 100%;
+  z-index: 9999;
+  top: 0;
+  box-shadow: 0px 0px 20px 0px rgba(21, 47, 95, 0.2);
+}
+.header_aera .searchForm {
+  height: 0;
+  overflow: hidden;
+  transition: all 300ms linear 0s;
+}
+.header_aera .searchForm .input-group-addon {
+  border-radius: 0;
+  border: none;
+  font-size: 14px;
+  padding: 0 45px;
+  background: #2d7d9a;
+  color: #fff;
+  cursor: pointer;
+}
+.header_aera .searchForm .form-control {
+  height: 79px;
+  padding: 0 15px;
+  border-radius: 0;
+  border: none;
+  color: #fff;
+  background: #2d7d9a;
+  text-align: center;
+  font: 400 16px "nintendoNTLG-DB001", sans-serif;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+.header_aera .searchForm .form-control.placeholder {
+  font: 400 16px "nintendoNTLG-DB001", sans-serif;
+  color: #fff;
+}
+.header_aera .searchForm .form-control:-moz-placeholder {
+  font: 400 16px "nintendoNTLG-DB001", sans-serif;
+  color: #fff;
+}
+.header_aera .searchForm .form-control::-webkit-input-placeholder {
+  font: 400 16px "nintendoNTLG-DB001", sans-serif;
+  color: #fff;
+}
+.header_aera .show {
+  height: 80px;
+  border-bottom: 1px solid transparent;
+}
+.header_aera .navbar-header .navbar-brand {
+  padding-top: 39px;
+}
+.header_aera .navbar-header .navbar-brand img {
+  max-width: 100%;
+}
+.header_aera .navbar-collapse .navbar-nav.navbar-right li a {
+  font: 400 14px/100px "nintendoNTLG-DB001", sans-serif;
+  color: #222222;
+  /*text-transform: uppercase;*/
+  padding: 0;
+  padding-left: 30px;
+}
+.header_aera .navbar-collapse .navbar-nav.navbar-right li a:hover, .header_aera .navbar-collapse .navbar-nav.navbar-right li a:focus {
+  color: #2d7d9a;
+}
+.header_aera .navbar-collapse .navbar-nav.navbar-right li .nav_searchFrom {
+  width: 100px;
+  background: #2d7d9a;
+  color: #fff;
+  padding: 0;
+  text-align: center;
+  margin-left: 15px;
+}
+.header_aera .navbar-collapse .navbar-nav.navbar-right li .nav_searchFrom:hover, .header_aera .navbar-collapse .navbar-nav.navbar-right li .nav_searchFrom:focus {
+  color: #222222;
+}
+@media (min-width: 768px) {
+  .header_aera .navbar-collapse .navbar-nav.navbar-right li.submenu .other_dropdwn {
+    margin-right: -122px;
+  }
+}
+.header_aera .navbar-collapse .navbar-nav.navbar-right li.submenu ul {
+  border: none;
+  box-shadow: none;
+  border-radius: 0px;
+  min-width: 190px;
+  transition: all 500ms ease-in-out;
+  /*background: #2d7d9a;*/
+}
+@media (min-width: 768px) {
+  .header_aera .navbar-collapse .navbar-nav.navbar-right li.submenu ul {
+    margin-right: -150px;
+    display: block;
+    transform: rotateX(-90deg);
+    transform-origin: top;
+  }
+}
+.header_aera .navbar-collapse .navbar-nav.navbar-right li.submenu ul li {
+  display: block;
+}
+.header_aera .navbar-collapse .navbar-nav.navbar-right li.submenu ul li a {
+  line-height: normal;
+  font: 700 14px/normal "nintendoNTLG-DB001", sans-serif;
+  padding: 12px 8px;
+  display: block;
+}
+.header_aera .navbar-collapse .navbar-nav.navbar-right li.submenu ul:before {
+  content: "";
+  width: 100%;
+  height: 5px;
+  background: #222222;
+  position: absolute;
+  top: 0px;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition: all 800ms ease-in-out;
+}
+.header_aera .navbar-collapse .navbar-nav.navbar-right li.submenu ul:after {
+  content: "";
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  bottom: 0px;
+  background: #222222;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  transform: scaleX(0);
+  transform-origin: 100% 50%;
+  transition: all 800ms ease-in-out;
+}
+@media (min-width: 768px) {
+  .header_aera .navbar-collapse .navbar-nav.navbar-right li:hover.submenu ul {
+    transform: rotateX(0deg);
+  }
+  .header_aera .navbar-collapse .navbar-nav.navbar-right li:hover.submenu ul:before {
+    transform: scaleX(1);
+  }
+  .header_aera .navbar-collapse .navbar-nav.navbar-right li:hover.submenu ul:after {
+    transform: scaleX(1);
+  }
+}
+
+/* End Header Aera */
+/* End header area 2 */
+.header_aera_tow {
+  background-color: transparent;
+  position: relative;
+  box-shadow: none;
+}
+.header_aera_tow .navbar_right_fulid {
+  background: #fff;
+  height: 100px;
+  padding-left: 20px;
+  box-shadow: 0px 0px 40px 0px rgba(21, 47, 95, 0.2);
+}
+.header_aera_tow .navbar_right_fulid:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  height: 100px;
+  background: #fff;
+  width: 30%;
+  z-index: -1;
+  box-shadow: 0px 0px 40px 0px rgba(21, 47, 95, 0.2);
+}
+.header_aera_tow .navbar_right_fulid ul.nav.navbar-nav.navbar-right {
+  margin-right: 0;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+  background-color: transparent;
+}
+
+/* header area 2 */
+/*--------------------------------------------------*/
+/* slider_area */
+.slider_area .slider_inner .camera_caption {
+  height: 100%;
+}
+.slider_area .slider_inner .camera_caption div {
+  background: transparent;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  /*text-transform: uppercase;*/
+  text-shadow: none;
+  left: 0;
+}
+.slider_area .slider_inner .camera_caption div h5 {
+  color: #2d7d9a;
+  font: 400 24px "nintendoNTLG-DB001", sans-serif;
+}
+.slider_area .slider_inner .camera_caption div h3 {
+  color: #fff;
+  font: 400 30px "nintendoNTLG-DB001", sans-serif;
+  padding-top: 27px;
+}
+.slider_area .slider_inner .camera_caption div p {
+  padding-top: 60px;
+  color: #fff;
+  font: 400 14px/26px "nintendoNTLG-DB001", sans-serif;
+  max-width: 750px;
+  margin: 0 auto;
+  padding-bottom: 90px;
+}
+.slider_area .slider_inner .camera_caption div a {
+  font: 700 18px/59px "nintendoNTLG-DB001", sans-serif;
+  width: 180px;
+  text-align: center;
+  background: #2d7d9a;
+  display: block;
+  text-shadow: none;
+  margin: 0 auto;
+  outline: none !important;
+  box-shadow: none;
+  border: 0;
+  color: #222222;
+  position: relative;
+  z-index: 2;
+  padding: 0;
+}
+.slider_area .slider_inner .camera_caption div a:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: #fff;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  right: 0;
+  transform: scaleY(0);
+  transform-origin: 50%;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+.slider_area .slider_inner .camera_caption div a:hover:before, .slider_area .slider_inner .camera_caption div a:focus:before {
+  transform: scaleY(1);
+}
+.slider_area .slider_inner .camera_prev, .slider_area .slider_inner .camera_next {
+  opacity: 1 !important;
+  background-color: transparent;
+}
+.slider_area .slider_inner .camera_prev span, .slider_area .slider_inner .camera_next span {
+  display: none;
+}
+.slider_area .slider_inner .camera_prev {
+  position: relative;
+}
+.slider_area .slider_inner .camera_prev:after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  background: url("../vendors/camera-slider/images/prev.png") no-repeat;
+  left: 382px;
+  height: 50px;
+  width: 50px;
+}
+.slider_area .slider_inner .camera_next:after {
+  content: "";
+  position: absolute !important;
+  top: 0;
+  background: url("../vendors/camera-slider/images/next.png") no-repeat;
+  right: 382px;
+  height: 50px;
+  width: 50px;
+}
+.slider_area .slider_inner .camera_fakehover {
+  top: 20px;
+}
+
+/* End slider_area */
+/* slider_area_tow */
+.slider_area_tow .slider_inner .camera_caption div .container {
+  width: 1170px !important;
+  text-align: left;
+  position: relative;
+  top: 250px;
+}
+.slider_area_tow .slider_inner .camera_caption div .container p {
+  margin: 0;
+}
+.slider_area_tow .slider_inner .camera_caption div .container a {
+  margin: 0;
+}
+.slider_area_tow .slider_inner .camera_prev:after {
+  left: 230px;
+}
+.slider_area_tow .slider_inner .camera_next:after {
+  right: 230px;
+}
+
+/* End slider_area_tow */
+/* Banner Area */
+.banner_area {
+  background: url("../images/banner-bg.jpg") no-repeat fixed;
+  background-position: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 70px;
+}
+.banner_area:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  z-index: -1;
+}
+.banner_area h2 {
+  color: #fff;
+  font: 400 40px "nintendo_udsg-r_std_003", sans-serif;
+  /*text-transform: uppercase;*/
+  padding-top: 85px;
+}
+.banner_area .breadcrumb {
+  background-color: transparent;
+  padding-top: 15px;
+}
+.banner_area .breadcrumb li a {
+  font: 400 14px "nintendoNTLG-DB001", sans-serif;
+  color: #fefefe;
+}
+.banner_area .breadcrumb li a.active {
+  color: #2d7d9a;
+}
+
+/* End Banner Area */
+/*--------------------------------------------------*/
+.professional_builder {
+  background: #f5f5f5;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+.professional_builder .builder_all .builder {
+  text-align: center;
+  padding-bottom: 25px;
+}
+.professional_builder .builder_all .builder i {
+  font-size: 48px;
+  color: #2d7d9a;
+  padding-bottom: 35px;
+}
+.professional_builder .builder_all .builder h4 {
+  font: 700 18px "nintendoNTLG-DB001", sans-serif;
+  color: #222222;
+  padding-bottom: 20px;
+}
+.professional_builder .builder_all .builder p {
+  font: 400 14px/26px "nintendoNTLG-DB001", sans-serif;
+  color: #555555;
+}
+
+/*--------------------------------------------------*/
+/* about_us_area */
+.about_us_area {
+  background: #fefefe;
+}
+.about_us_area .about_row {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.about_us_area .about_row p {
+  font: 400 14px/26px "nintendoNTLG-DB001", sans-serif;
+  color: #555555;
+  padding-top: 28px;
+  padding-bottom: 54px;
+}
+.about_us_area .about_row .about_client {
+  padding-top: 7px;
+}
+.about_us_area .about_row .about_client img {
+  max-width: 100%;
+}
+.about_us_area .about_row .our_skill_inner .single_skill h3 {
+  font: 700 18px "nintendoNTLG-DB001", sans-serif;
+  color: #222222;
+  padding-bottom: 8px;
+}
+.about_us_area .about_row .our_skill_inner .single_skill .progress {
+  background: #f5f5f5;
+  box-shadow: none;
+  height: 8px;
+  width: 100%;
+  overflow: visible;
+  border-radius: 0;
+  position: relative;
+  margin-bottom: 40px;
+}
+.about_us_area .about_row .our_skill_inner .single_skill .progress .progress-bar {
+  background: #2d7d9a;
+  box-shadow: none;
+}
+.about_us_area .about_row .our_skill_inner .single_skill .progress .progress-bar .progress_parcent {
+  font: 700 18px "nintendoNTLG-DB001", sans-serif;
+  color: #222222;
+  position: absolute;
+  right: 0;
+  top: -30px;
+}
+.about_us_area .about_us2_pages {
+  padding-top: 90px;
+}
+
+/* End about_us_area */
+/*--------------------------------------------------*/
+.what_we_area {
+  background: #2d7d9a;
+}
+.what_we_area .tittle h2:after {
+  background: #fff;
+}
+.what_we_area .tittle h4 {
+  color: #333;
+}
+.what_we_area .construction_iner {
+  padding-top: 60px;
+  padding-bottom: 70px;
+}
+.what_we_area .construction_iner .construction {
+  text-align: center;
+  padding-bottom: 30px;
+  cursor: move;
+}
+.what_we_area .construction_iner .construction .cns-img {
+  z-index: 2;
+}
+.what_we_area .construction_iner .construction .cns-img img {
+  max-width: 100%;
+}
+.what_we_area .construction_iner .construction .cns-content {
+  background: #fff;
+  padding: 0 30px;
+  padding-bottom: 20px;
+  margin-top: -30px;
+}
+.what_we_area .construction_iner .construction .cns-content i {
+  color: #fff;
+  font-size: 24px;
+  background: #333333;
+  line-height: 60px;
+  width: 60px;
+  display: block;
+  margin: 0 auto;
+  z-index: 1;
+  transition: all 300ms linear 0s;
+  position: relative;
+}
+.what_we_area .construction_iner .construction .cns-content a {
+  font: 700 18px "nintendoNTLG-DB001", sans-serif;
+  /*text-transform: uppercase;*/
+  color: #222222;
+  padding-top: 17px;
+  display: block;
+}
+.what_we_area .construction_iner .construction .cns-content p {
+  font: 400 14px/26px "nintendoNTLG-DB001", sans-serif;
+  color: #555555;
+  padding-top: 20px;
+}
+.what_we_area .construction_iner .construction:hover a, .what_we_area .construction_iner .construction:focus a {
+  color: #2d7d9a;
+}
+.what_we_area .construction_iner .construction:hover i, .what_we_area .construction_iner .construction:focus i {
+  font-size: 35px;
+}
+
+/*--------------------------------------------------*/
+.our_feature_area {
+  padding-bottom: 90px;
+  background: #fefefe;
+}
+.our_feature_area .feature_row {
+  padding-top: 70px;
+}
+.our_feature_area .feature_row .feature_img {
+  padding-top: 10px;
+}
+.our_feature_area .feature_row .feature_img img {
+  max-width: 100%;
+}
+.our_feature_area .feature_row .feature_content .subtittle {
+  padding-bottom: 40px;
+}
+.our_feature_area .feature_row .feature_content .media {
+  padding-bottom: 15px;
+}
+.our_feature_area .feature_row .feature_content .media .media-left {
+  padding-right: 30px;
+}
+.our_feature_area .feature_row .feature_content .media .media-left a i {
+  font-size: 24px;
+  color: #2d7d9a;
+  line-height: 50px;
+  width: 60px;
+  text-align: center;
+  background: #333333;
+  border: 5px solid #2d7d9a;
+}
+.our_feature_area .feature_row .feature_content .media .media-body a {
+  font: 700 18px "nintendoNTLG-DB001", sans-serif;
+  color: #222222;
+  /*text-transform: uppercase;*/
+}
+.our_feature_area .feature_row .feature_content .media .media-body a:hover, .our_feature_area .feature_row .feature_content .media .media-body a:focus {
+  color: #2d7d9a;
+}
+.our_feature_area .feature_row .feature_content .media .media-body p {
+  font: 400 14px/26px "nintendoNTLG-DB001", sans-serif;
+  color: #555555;
+  padding-top: 20px;
+}
+
+/*--------------------------------------------------*/
+/* our_services_area */
+.our_services_area {
+  background: #2e3841;
+  padding-bottom: 100px;
+}
+.our_services_area .tittle h2 {
+  color: #fff;
+}
+.our_services_area .tittle h4 {
+  color: #fefefe;
+}
+.our_services_area .portfolio_inner_area {
+  padding-top: 60px;
+}
+.our_services_area .portfolio_inner_area .portfolio_filter {
+  padding-bottom: 55px;
+}
+.our_services_area .portfolio_inner_area .portfolio_filter ul {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.our_services_area .portfolio_inner_area .portfolio_filter ul li {
+  list-style: none;
+  display: inline-block;
+  padding-left: 30px;
+}
+.our_services_area .portfolio_inner_area .portfolio_filter ul li:first-child {
+  padding: 0;
+}
+.our_services_area .portfolio_inner_area .portfolio_filter ul li a {
+  font: 400 14px "nintendo_udsg-r_std_003", sans-serif;
+  /*text-transform: uppercase;*/
+  color: #f5f5f5;
+}
+.our_services_area .portfolio_inner_area .portfolio_filter ul li:hover a, .our_services_area .portfolio_inner_area .portfolio_filter ul li:focus a, .our_services_area .portfolio_inner_area .portfolio_filter ul li.active a {
+  color: #2d7d9a;
+}
+.our_services_area .portfolio_inner_area .portfolio_item .single_facilities .single_facilities_inner {
+  position: relative;
+}
+.our_services_area .portfolio_inner_area .portfolio_item .single_facilities .single_facilities_inner img {
+  max-width: 100%;
+}
+.our_services_area .portfolio_inner_area .portfolio_item .single_facilities .single_facilities_inner .gallery_hover {
+  background-color: rgba(248, 184, 29, 0.851);
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  overflow: hidden;
+  display: block;
+  text-align: center;
+  padding-top: calc(50% - 70px);
+  cursor: pointer;
+  opacity: 0;
+  transition: all 300ms linear 0s;
+}
+.our_services_area .portfolio_inner_area .portfolio_item .single_facilities .single_facilities_inner .gallery_hover h4 {
+  color: #fff;
+  font: 700 14px "nintendoNTLG-DB001", sans-serif;
+  padding-bottom: 30px;
+  /*text-transform: uppercase;*/
+  position: relative;
+  left: -65%;
+  transition: all 300ms linear 0s;
+}
+.our_services_area .portfolio_inner_area .portfolio_item .single_facilities .single_facilities_inner .gallery_hover ul {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  right: -67%;
+  transition: all 300ms linear 0s;
+}
+.our_services_area .portfolio_inner_area .portfolio_item .single_facilities .single_facilities_inner .gallery_hover ul li {
+  list-style: none;
+  display: inline-block;
+  padding-left: 17px;
+}
+.our_services_area .portfolio_inner_area .portfolio_item .single_facilities .single_facilities_inner .gallery_hover ul li:first-child {
+  padding: 0;
+}
+.our_services_area .portfolio_inner_area .portfolio_item .single_facilities .single_facilities_inner .gallery_hover ul li a {
+  font-size: 14px;
+  color: #fff;
+  line-height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  display: block;
+}
+.our_services_area .portfolio_inner_area .portfolio_item .single_facilities .single_facilities_inner .gallery_hover ul li a:hover, .our_services_area .portfolio_inner_area .portfolio_item .single_facilities .single_facilities_inner .gallery_hover ul li a:focus {
+  color: #2d7d9a;
+  background: #fff;
+}
+.our_services_area .portfolio_inner_area .portfolio_item .single_facilities .single_facilities_inner:hover .gallery_hover, .our_services_area .portfolio_inner_area .portfolio_item .single_facilities .single_facilities_inner:focus .gallery_hover {
+  opacity: 1;
+}
+.our_services_area .portfolio_inner_area .portfolio_item .single_facilities .single_facilities_inner:hover .gallery_hover h4, .our_services_area .portfolio_inner_area .portfolio_item .single_facilities .single_facilities_inner:focus .gallery_hover h4 {
+  left: 0;
+}
+.our_services_area .portfolio_inner_area .portfolio_item .single_facilities .single_facilities_inner:hover .gallery_hover ul, .our_services_area .portfolio_inner_area .portfolio_item .single_facilities .single_facilities_inner:focus .gallery_hover ul {
+  right: 0;
+}
+
+/* grid-sizer css */
+.grid-sizer {
+  width: 33.33333333%;
+}
+
+/* End our_services_area */
+/* our_services_tow */
+.our_services_tow {
+  background: #f5f5f5;
+  padding-bottom: 100px;
+  overflow: hidden;
+  display: block;
+}
+.our_services_tow .architecture_area {
+  padding-top: 60px;
+}
+.our_services_tow .architecture_area .portfolio_filter_2 {
+  border: 1px solid #dfe3e4;
+  display: block;
+  overflow: hidden;
+}
+.our_services_tow .architecture_area .portfolio_filter_2 ul {
+  padding: 0;
+}
+.our_services_tow .architecture_area .portfolio_filter_2 ul li {
+  float: left;
+  list-style: none;
+  width: 33%;
+  text-align: center;
+  transition: all 300ms linear 0s;
+  border-right: 1px solid #dfe3e4;
+  height: 150px;
+}
+
+.our_services_tow .architecture_area .portfolio_filter_2 ul li:last-child {
+  border-right: 0;
+}
+.our_services_tow .architecture_area .portfolio_filter_2 ul li a {
+  font: 400 18px "nintendoNTLG-DB001", sans-serif;
+  color: #222222;
+  display: block;
+  padding-top: 40px;
+  padding-bottom: 35px;
+}
+.our_services_tow .architecture_area .portfolio_filter_2 ul li a i {
+  font-size: 36px;
+  display: block;
+  padding-bottom: 10px;
+}
+.our_services_tow .architecture_area .portfolio_filter_2 ul li:hover, .our_services_tow .architecture_area .portfolio_filter_2 ul li:focus, .our_services_tow .architecture_area .portfolio_filter_2 ul li.active {
+  border-bottom: 5px solid #2d7d9a;
+}
+.our_services_tow .architecture_area .portfolio_filter_2 ul li:hover a, .our_services_tow .architecture_area .portfolio_filter_2 ul li:focus a, .our_services_tow .architecture_area .portfolio_filter_2 ul li.active a {
+  color: #2d7d9a;
+}
+.our_services_tow .architecture_area .portfolio_2 {
+  padding-top: 90px;
+}
+.our_services_tow .architecture_area .portfolio_2 .single_facilities img {
+  max-width: 100%;
+}
+.our_services_tow .architecture_area .portfolio_2 .single_facilities .who_we_area .subtittle {
+  padding-bottom: 30px;
+}
+.our_services_tow .architecture_area .portfolio_2 .single_facilities .who_we_area .subtittle h2:after {
+  background: #2d7d9a;
+}
+.our_services_tow .architecture_area .portfolio_2 .single_facilities .who_we_area p {
+  font: 400 14px/26px "nintendoNTLG-DB001", sans-serif;
+  color: #555555;
+  padding-bottom: 30px;
+}
+.our_services_tow .architecture_area .portfolio_2 .single_facilities .who_we_area a {
+  margin-top: 20px;
+}
+.our_services_tow .services_pages {
+  padding-top: 0;
+}
+
+.grid-sizer-2 {
+  width: 41.66666667%;
+}
+
+/* our_services_tow */
+/*--------------------------------------------------*/
+.our_team_area {
+  padding-bottom: 70px;
+  background: #fefefe;
+}
+.our_team_area .team_row {
+  padding-top: 70px;
+}
+.our_team_area .team_row .team_membar {
+  height: 378px;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 30px;
+}
+.our_team_area .team_row .team_membar img {
+  max-width: 100%;
+}
+.our_team_area .team_row .team_membar .team_content {
+  background: #2d7d9a;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+}
+.our_team_area .team_row .team_membar .team_content ul {
+  padding: 0;
+  margin: 0;
+  height: 0px;
+  overflow: hidden;
+  transition: all 300ms linear 0s;
+}
+.our_team_area .team_row .team_membar .team_content ul li {
+  list-style: none;
+  padding-left: 20px;
+  display: inline-block;
+}
+.our_team_area .team_row .team_membar .team_content ul li:first-child {
+  padding: 0;
+}
+.our_team_area .team_row .team_membar .team_content ul li a {
+  font-size: 14px;
+  color: #fff;
+  line-height: 43px;
+  width: 45px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  display: block;
+}
+.our_team_area .team_row .team_membar .team_content ul li a:hover, .our_team_area .team_row .team_membar .team_content ul li a:focus {
+  color: #2d7d9a;
+  background: #fff;
+}
+.our_team_area .team_row .team_membar .team_content .name {
+  font: 700 14px "nintendoNTLG-DB001", sans-serif;
+  color: #fff;
+  display: block;
+  /*text-transform: uppercase;*/
+  padding-top: 10px;
+}
+.our_team_area .team_row .team_membar .team_content h6 {
+  font: 400 14px "nintendoNTLG-DB001", sans-serif;
+  color: #fff;
+  padding-top: 5px;
+}
+.our_team_area .team_row .team_membar:hover .team_content ul, .our_team_area .team_row .team_membar:focus .team_content ul {
+  height: 50px;
+}
+
+/*--------------------------------------------------*/
+.our_achievments_area {
+  background: url("../images/achievments_bg.jpg") no-repeat fixed;
+  background-position: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 100px;
+}
+.our_achievments_area:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  z-index: -1;
+}
+.our_achievments_area .tittle h2 {
+  color: #fff;
+}
+.our_achievments_area .tittle h4 {
+  color: #fefefe;
+}
+.our_achievments_area .achievments_row {
+  padding-top: 60px;
+}
+.our_achievments_area .achievments_row .completed {
+  text-align: center;
+  border-right: 3px solid #fff;
+}
+.our_achievments_area .achievments_row .completed:last-child {
+  border: 0;
+}
+.our_achievments_area .achievments_row .completed i {
+  font-size: 30px;
+  color: #fff;
+  display: block;
+  padding-top: 10px;
+}
+.our_achievments_area .achievments_row .completed .counter {
+  font: 700 40px "nintendoNTLG-DB001", sans-serif;
+  color: #2d7d9a;
+  display: block;
+  padding-top: 23px;
+}
+.our_achievments_area .achievments_row .completed h6 {
+  font: 400 14px "nintendoNTLG-DB001", sans-serif;
+  color: #fff;
+  padding-top: 20px;
+  /*text-transform: uppercase;*/
+  padding-bottom: 5px;
+}
+
+/*--------------------------------------------------*/
+/* Testimonial Area */
+.testimonial_area {
+  padding-bottom: 90px;
+  background: #fefefe;
+}
+.testimonial_area .testimonial_carosel {
+  padding-top: 60px;
+}
+.testimonial_area .testimonial_carosel .item .media {
+  max-width: 260px;
+  margin: 0 auto;
+  padding-bottom: 35px;
+}
+.testimonial_area .testimonial_carosel .item .media .media-left {
+  padding-right: 30px;
+}
+.testimonial_area .testimonial_carosel .item .media .media-left a img {
+  width: auto;
+}
+.testimonial_area .testimonial_carosel .item .media .media-body {
+  padding-top: 40px;
+}
+.testimonial_area .testimonial_carosel .item .media .media-body h4 {
+  font: 700 14px "nintendoNTLG-DB001", sans-serif;
+  /*text-transform: uppercase;*/
+  color: #222222;
+}
+.testimonial_area .testimonial_carosel .item .media .media-body h6 {
+  font: 400 italic 14px "nintendoNTLG-DB001", sans-serif;
+  color: #555555;
+  padding-top: 5px;
+}
+.testimonial_area .testimonial_carosel .item p {
+  font: 400 italic 14px/26px "nintendoNTLG-DB001", sans-serif;
+  color: #2d7d9a;
+  max-width: 945px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.testimonial_area .testimonial_carosel .item p i {
+  color: #555555;
+  font-size: 18px;
+  display: block;
+}
+.testimonial_area .testimonial_carosel .item p .fa-quote-left {
+  text-align: right;
+  padding-top: 5px;
+}
+.testimonial_area .testimonial_carosel .item p .fa-quote-right {
+  text-align: left;
+  padding-bottom: 5px;
+}
+.testimonial_area .testimonial_carosel .owl-controls {
+  text-align: center;
+}
+.testimonial_area .testimonial_carosel .owl-controls .owl-dots .owl-dot {
+  height: 10px;
+  width: 10px;
+  border: 2px solid #555555;
+  margin-left: 15px;
+  display: inline-block;
+  transition: all 300ms linear 0s;
+  border-radius: 50%;
+}
+.testimonial_area .testimonial_carosel .owl-controls .owl-dots .owl-dot:hover, .testimonial_area .testimonial_carosel .owl-controls .owl-dots .owl-dot:focus, .testimonial_area .testimonial_carosel .owl-controls .owl-dots .owl-dot.active {
+  background: #2d7d9a;
+  border: 2px solid #2d7d9a;
+}
+
+/* End Testimonial Area */
+/* Our Partners Area */
+.our_partners_area {
+  background: #f5f5f5;
+}
+.our_partners_area .partners {
+  padding-top: 60px;
+  padding-bottom: 90px;
+}
+.our_partners_area .partners .item img {
+  width: 100%;
+}
+.our_partners_area .book_now_aera {
+  background: #2d7d9a;
+  padding: 50px 0;
+}
+.our_partners_area .book_now_aera .book_now .booking_text {
+  padding-top: 8px;
+}
+.our_partners_area .book_now_aera .book_now .booking_text h4 {
+  font: 700 18px "nintendoNTLG-DB001", sans-serif;
+  color: #222222;
+}
+.our_partners_area .book_now_aera .book_now .booking_text p {
+  font: 400 14px/26px "nintendoNTLG-DB001", sans-serif;
+  color: #555555;
+  padding-top: 5px;
+}
+.our_partners_area .book_now_aera .book_now .book_bottun a {
+  width: 200px;
+  background: #333333;
+  border-radius: 10px;
+  color: #fff;
+}
+
+/* End Our Partners Area */
+/*--------------------------------------------------*/
+.featured_works {
+  background: url("../images/protfolio_bg.jpg") no-repeat fixed;
+  background-position: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 100px;
+  display: block;
+  overflow: hidden;
+  padding-bottom: 100px;
+}
+.featured_works:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  z-index: -1;
+}
+.featured_works .tittle h2 {
+  color: #fff;
+}
+.featured_works .tittle h4 {
+  color: #fefefe;
+}
+.featured_works .featured_gallery {
+  padding-top: 60px;
+}
+.featured_works .featured_gallery .gallery_iner {
+  position: relative;
+  overflow: hidden;
+}
+.featured_works .featured_gallery .gallery_iner img {
+  max-width: 100%;
+}
+.featured_works .featured_gallery .gallery_iner:after {
+  content: "";
+  position: absolute;
+  background-color: rgba(248, 184, 29, 0.7);
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  opacity: 0;
+  transition: all 300ms linear 0s;
+}
+.featured_works .featured_gallery .gallery_iner .gallery_hover {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  transform: translateY(-50%);
+  right: 0;
+  text-align: center;
+  z-index: 2;
+}
+.featured_works .featured_gallery .gallery_iner .gallery_hover h4 {
+  color: #fff;
+  font: 700 14px "nintendoNTLG-DB001", sans-serif;
+  /*text-transform: uppercase;*/
+  padding-bottom: 18px;
+  position: relative;
+  right: -100%;
+  transition: all 300ms linear 0s;
+}
+.featured_works .featured_gallery .gallery_iner .gallery_hover a {
+  width: 200px;
+  font: 400 14px/60px "nintendoNTLG-DB001", sans-serif;
+  text-align: center;
+  display: block;
+  border-radius: 10px;
+  background: #333333;
+  color: #fff;
+  position: relative;
+  left: -100%;
+  transition: all 300ms linear 0s;
+  /*text-transform: uppercase;*/
+  margin: 0 auto;
+}
+.featured_works .featured_gallery .gallery_iner .gallery_hover a:hover, .featured_works .featured_gallery .gallery_iner .gallery_hover a:focus {
+  background: #fff;
+  color: #2d7d9a;
+}
+.featured_works .featured_gallery .gallery_iner:hover:after, .featured_works .featured_gallery .gallery_iner:focus:after {
+  opacity: 1;
+}
+.featured_works .featured_gallery .gallery_iner:hover .gallery_hover h4, .featured_works .featured_gallery .gallery_iner:focus .gallery_hover h4 {
+  right: 0;
+}
+.featured_works .featured_gallery .gallery_iner:hover .gallery_hover a, .featured_works .featured_gallery .gallery_iner:focus .gallery_hover a {
+  left: 0;
+}
+
+/*--------------------------------------------------*/
+/* latest_blog_area */
+.latest_blog_area {
+  padding-bottom: 70px;
+  background: #fefefe;
+}
+.latest_blog_area .latest_blog {
+  padding-top: 60px;
+}
+.latest_blog_area .latest_blog .blog_content {
+  padding-bottom: 25px;
+}
+.latest_blog_area .latest_blog .blog_content img {
+  max-width: 100%;
+}
+.latest_blog_area .latest_blog .blog_content .blog_heading {
+  font: 700 18px "nintendoNTLG-DB001", sans-serif;
+  color: #222222;
+  display: block;
+  padding-top: 45px;
+}
+.latest_blog_area .latest_blog .blog_content .blog_heading:hover, .latest_blog_area .latest_blog .blog_content .blog_heading:focus {
+  color: #2d7d9a;
+}
+.latest_blog_area .latest_blog .blog_content h4 {
+  font: 400 14px "nintendoNTLG-DB001", sans-serif;
+  color: #555555;
+  /*text-transform: uppercase;*/
+  padding-top: 25px;
+}
+.latest_blog_area .latest_blog .blog_content h4 a {
+  font: 400 14px "nintendoNTLG-DB001", sans-serif;
+  color: #555555;
+}
+.latest_blog_area .latest_blog .blog_content h4 a:hover, .latest_blog_area .latest_blog .blog_content h4 a:focus {
+  color: #2d7d9a;
+}
+.latest_blog_area .latest_blog .blog_content h4 span {
+  color: #2d7d9a;
+  width: 40px;
+  text-align: center;
+  display: inline-block;
+}
+.latest_blog_area .latest_blog .blog_content p {
+  font: 400 14px/26px "nintendoNTLG-DB001", sans-serif;
+  color: #555555;
+  text-align: justify;
+  padding-top: 30px;
+}
+.latest_blog_area .latest_blog .blog_content p a {
+  font-weight: 700;
+  color: #222222;
+}
+.latest_blog_area .latest_blog .blog_content p a:hover, .latest_blog_area .latest_blog .blog_content p a:focus {
+  color: #2d7d9a;
+}
+
+/* End latest_blog_area */
+/* blog_tow_area */
+.blog_tow_area {
+  padding-top: 100px;
+  padding-bottom: 70px;
+}
+.blog_tow_area .blog_tow_row .renovation {
+  padding-bottom: 30px;
+}
+.blog_tow_area .blog_tow_row .renovation img {
+  max-width: 100%;
+}
+.blog_tow_area .blog_tow_row .renovation .renovation_content {
+  border: 1px solid #888;
+  padding: 28px;
+}
+.blog_tow_area .blog_tow_row .renovation .renovation_content .clipboard {
+  background: #2d7d9a;
+  border: 1px solid #fff;
+  width: 60px;
+  border-radius: 50%;
+  display: block;
+  position: relative;
+  margin-top: -60px;
+  text-align: center;
+  z-index: 1;
+}
+.blog_tow_area .blog_tow_row .renovation .renovation_content .clipboard i {
+  font-size: 24px;
+  color: #fefefe;
+  line-height: 60px;
+}
+.blog_tow_area .blog_tow_row .renovation .renovation_content .tittle {
+  font: 700 14px/1 "nintendoNTLG-DB001", sans-serif;
+  color: #222222;
+  text-align: left;
+  /*text-transform: uppercase;*/
+  display: block;
+  padding-top: 30px;
+}
+.blog_tow_area .blog_tow_row .renovation .renovation_content .tittle:hover, .blog_tow_area .blog_tow_row .renovation .renovation_content .tittle:focus {
+  color: #2d7d9a;
+}
+.blog_tow_area .blog_tow_row .renovation .renovation_content .date_comment {
+  padding-top: 20px;
+}
+.blog_tow_area .blog_tow_row .renovation .renovation_content .date_comment a {
+  font: 400 14px "nintendoNTLG-DB001", sans-serif;
+  color: #888;
+  padding-right: 60px;
+}
+.blog_tow_area .blog_tow_row .renovation .renovation_content .date_comment a i {
+  padding-right: 10px;
+}
+.blog_tow_area .blog_tow_row .renovation .renovation_content p {
+  font: 400 14px/26px "nintendoNTLG-DB001", sans-serif;
+  color: #555555;
+  padding-top: 30px;
+  padding-bottom: 5px;
+}
+
+/* End blog_tow_area */
+/*--------------------------------------------------*/
+.call_min_area {
+  background: #2d7d9a;
+  text-align: center;
+  padding-top: 85px;
+  padding-bottom: 100px;
+}
+.call_min_area h2 {
+  font: 400 60px "nintendoNTLG-DB001", sans-serif;
+  color: #fff;
+}
+.call_min_area P {
+  font: 400 30px/36px "nintendoNTLG-DB001", sans-serif;
+  color: #fefefe;
+  /*text-transform: uppercase;*/
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 8px;
+  padding-bottom: 20px;
+}
+.call_min_area .call_btn a {
+  display: inline-block;
+  border: 2px solid #fff;
+  font: 400 18px/56px "nintendoNTLG-DB001", sans-serif;
+  color: #fefefe;
+  margin-left: 20px;
+}
+.call_min_area .call_btn a:first-child {
+  margin-left: 0;
+}
+
+/*--------------------------------------------------*/
+.building_construction_area .building_construction_row {
+  padding-top: 95px;
+  padding-bottom: 95px;
+}
+.building_construction_area .building_construction_row .constructing_laft h2 {
+  font: 700 24px "nintendoNTLG-DB001", sans-serif;
+  color: #222222;
+  /*text-transform: uppercase;*/
+  padding-bottom: 35px;
+}
+.building_construction_area .building_construction_row .constructing_laft img {
+  max-width: 100%;
+}
+.building_construction_area .building_construction_row .constructing_laft a {
+  font: 700 24px "nintendoNTLG-DB001", sans-serif;
+  color: #222222;
+  /*text-transform: uppercase;*/
+  padding-bottom: 25px;
+  display: block;
+  padding-top: 25px;
+}
+.building_construction_area .building_construction_row .constructing_laft a:hover, .building_construction_area .building_construction_row .constructing_laft a:focus {
+  color: #2d7d9a;
+}
+.building_construction_area .building_construction_row .constructing_laft p {
+  font: 400 14px/26px "nintendoNTLG-DB001", sans-serif;
+  color: #555555;
+}
+.building_construction_area .building_construction_row .constructing_laft .ipsum {
+  padding-left: 0;
+  padding-top: 15px;
+}
+.building_construction_area .building_construction_row .constructing_laft .ipsum .excavator {
+  padding: 0;
+  padding-top: 15px;
+}
+.building_construction_area .building_construction_row .constructing_laft .ipsum .excavator li {
+  list-style: none;
+  font: 400 14px/26px "nintendoNTLG-DB001", sans-serif;
+  color: #555555;
+}
+.building_construction_area .building_construction_row .constructing_laft .ipsum .excavator li i {
+  color: #2d7d9a;
+  padding-right: 30px;
+}
+.building_construction_area .building_construction_row .constructing_laft .ipsum_img {
+  padding-top: 25px;
+  padding-bottom: 16px;
+}
+.building_construction_area .building_construction_row .constructing_laft .ipsum_img img {
+  max-width: 100%;
+}
+.building_construction_area .building_construction_row .constructing_right h2 {
+  font: 700 24px "nintendoNTLG-DB001", sans-serif;
+  color: #222222;
+  /*text-transform: uppercase;*/
+  padding-bottom: 35px;
+}
+.building_construction_area .building_construction_row .constructing_right .painting {
+  padding: 0;
+  padding-bottom: 40px;
+}
+.building_construction_area .building_construction_row .constructing_right .painting li {
+  list-style: none;
+  padding-bottom: 10px;
+}
+.building_construction_area .building_construction_row .constructing_right .painting li a {
+  font: 700 14px/50px "nintendoNTLG-DB001", sans-serif;
+  color: #555555;
+  background: #f5f5f5;
+  display: block;
+  padding-left: 25px;
+}
+.building_construction_area .building_construction_row .constructing_right .painting li a i {
+  font-size: 18px;
+  padding-right: 20px;
+}
+.building_construction_area .building_construction_row .constructing_right .painting li a:hover, .building_construction_area .building_construction_row .constructing_right .painting li a:focus {
+  color: #2d7d9a;
+}
+.building_construction_area .building_construction_row .constructing_right .contact_us {
+  background: #2d7d9a;
+  padding: 30px;
+}
+.building_construction_area .building_construction_row .constructing_right .contact_us h4 {
+  font: 400 14px/1 "nintendoNTLG-DB001", sans-serif;
+  color: #fefefe;
+  /*text-transform: uppercase;*/
+  padding-bottom: 25px;
+}
+.building_construction_area .building_construction_row .constructing_right .contact_us .contac_namber {
+  font: 700 18px/26px "nintendoNTLG-DB001", sans-serif;
+  color: #fefefe;
+  display: block;
+}
+.building_construction_area .building_construction_row .constructing_right .contact_us p {
+  font: 400 14px/26px "nintendoNTLG-DB001", sans-serif;
+  color: #fefefe;
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+.building_construction_area .building_construction_row .constructing_right .contact_us .button_all {
+  width: 150px;
+  border: 2px solid #fff;
+  background-color: transparent;
+  font: 400 14px/36px "nintendoNTLG-DB001", sans-serif;
+  color: #fefefe;
+}
+
+/*--------------------------------------------------*/
+/* blog area */
+.blog_all .blog_row {
+  padding: 100px 0;
+}
+.blog_all .blog_row .main_blog img {
+  max-width: 100%;
+}
+.blog_all .blog_row .main_blog .blog_date {
+  background: #222222;
+  text-align: center;
+  width: 50px;
+  padding: 10px;
+}
+.blog_all .blog_row .main_blog .blog_date a {
+  display: block;
+  font: 700 14px/30px "nintendoNTLG-DB001", sans-serif;
+  color: #fefefe;
+  border-bottom: 1px solid #2d7d9a;
+}
+.blog_all .blog_row .main_blog .blog_date a:last-child {
+  border: 0;
+}
+.blog_all .blog_row .main_blog .blog_content .blog_heading {
+  display: block;
+  font: 700 24px "nintendoNTLG-DB001", sans-serif;
+  color: #222222;
+  /*text-transform: uppercase;*/
+  padding-top: 20px;
+  padding-bottom: 33px;
+}
+.blog_all .blog_row .main_blog .blog_content .blog_heading:hover, .blog_all .blog_row .main_blog .blog_content .blog_heading:focus {
+  color: #2d7d9a;
+}
+.blog_all .blog_row .main_blog .blog_content .blog_admin {
+  font: 400 14px "nintendoNTLG-DB001", sans-serif;
+  color: #222222;
+  display: inline-block;
+  padding-bottom: 30px;
+}
+.blog_all .blog_row .main_blog .blog_content .blog_admin i {
+  color: #2d7d9a;
+  padding-right: 10px;
+}
+.blog_all .blog_row .main_blog .blog_content .blog_admin:hover, .blog_all .blog_row .main_blog .blog_content .blog_admin:focus {
+  color: #2d7d9a;
+}
+.blog_all .blog_row .main_blog .blog_content .like_share {
+  padding: 0;
+  margin: 0;
+  float: right;
+}
+.blog_all .blog_row .main_blog .blog_content .like_share li {
+  list-style: none;
+  display: inline-block;
+}
+.blog_all .blog_row .main_blog .blog_content .like_share li a {
+  font: 400 14px "nintendoNTLG-DB001", sans-serif;
+  color: #222222;
+  padding-left: 20px;
+}
+.blog_all .blog_row .main_blog .blog_content .like_share li a i {
+  color: #2d7d9a;
+  padding-right: 10px;
+}
+.blog_all .blog_row .main_blog .blog_content .like_share li:last-child a i {
+  padding: 0;
+}
+.blog_all .blog_row .main_blog .blog_content p {
+  font: 400 14px/26px "nintendoNTLG-DB001", sans-serif;
+  color: #555555;
+  padding-bottom: 30px;
+}
+.blog_all .blog_row .main_blog .blog_content .tag {
+  padding-bottom: 40px;
+}
+.blog_all .blog_row .main_blog .blog_content .tag h4 {
+  font: 400 18px "nintendoNTLG-DB001", sans-serif;
+  color: #222222;
+  padding-bottom: 20px;
+}
+.blog_all .blog_row .main_blog .blog_content .tag a {
+  border: 1px solid #888888;
+  color: #888;
+  font: 400 14px/30px "nintendoNTLG-DB001", sans-serif;
+  padding: 0 20px;
+  display: inline-block;
+  margin-right: 10px;
+}
+.blog_all .blog_row .main_blog .blog_content .tag a:hover, .blog_all .blog_row .main_blog .blog_content .tag a:focus {
+  color: #fff;
+  background: #2d7d9a;
+  border: 1px solid #2d7d9a;
+}
+.blog_all .blog_row .main_blog .client_text {
+  border-top: 1px solid #888;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.blog_all .blog_row .main_blog .client_text img {
+  max-width: 100%;
+}
+.blog_all .blog_row .main_blog .client_text .client_name {
+  font: 700 14px "nintendoNTLG-DB001", sans-serif;
+  color: #222222;
+  display: block;
+  padding-top: 25px;
+}
+.blog_all .blog_row .main_blog .client_text p {
+  font: 400 14px/26px "nintendoNTLG-DB001", sans-serif;
+  color: #555555;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+.blog_all .blog_row .main_blog .client_text .control {
+  font: 400 14px/70px "nintendoNTLG-DB001", sans-serif;
+  color: #555555;
+  border: 1px solid #888;
+  float: left;
+  display: block;
+  width: 50%;
+  text-transform: capitalize;
+  background-color: transparent;
+}
+.blog_all .blog_row .main_blog .client_text .control i {
+  color: #2d7d9a;
+}
+.blog_all .blog_row .main_blog .client_text .control:last-child {
+  border-left: 0;
+}
+.blog_all .blog_row .main_blog .comment_area {
+  background: #f7f7f7;
+  padding: 30px;
+  border-bottom: 1px solid #888;
+}
+.blog_all .blog_row .main_blog .comment_area h3 {
+  font: 700 14px/1 "nintendoNTLG-DB001", sans-serif;
+  color: #222222;
+  /*text-transform: uppercase;*/
+  padding-bottom: 40px;
+}
+.blog_all .blog_row .main_blog .comment_area .media {
+  margin: 0;
+}
+.blog_all .blog_row .main_blog .comment_area .media .media-left {
+  padding-right: 40px;
+}
+.blog_all .blog_row .main_blog .comment_area .media .media-left a {
+  height: 55px;
+  width: 55px;
+  display: block;
+}
+.blog_all .blog_row .main_blog .comment_area .media .media-left a img {
+  width: 100%;
+  border-radius: 50%;
+}
+.blog_all .blog_row .main_blog .comment_area .media .media-body .media-heading {
+  font: 700 14px "nintendoNTLG-DB001", sans-serif;
+  color: #222222;
+}
+.blog_all .blog_row .main_blog .comment_area .media .media-body .media-heading:hover, .blog_all .blog_row .main_blog .comment_area .media .media-body .media-heading:focus {
+  color: #2d7d9a;
+}
+.blog_all .blog_row .main_blog .comment_area .media .media-body h5 {
+  font: 400 14px "nintendoNTLG-DB001", sans-serif;
+  color: #888888;
+  padding-top: 10px;
+}
+.blog_all .blog_row .main_blog .comment_area .media .media-body p {
+  font: 400 14px "nintendoNTLG-DB001", sans-serif;
+  color: #555555;
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+.blog_all .blog_row .main_blog .comment_area .media .media-body .reply {
+  font: 400 14px/32px "nintendoNTLG-DB001", sans-serif;
+  color: #fefefe;
+  width: 80px;
+  text-align: center;
+  display: block;
+  background: #4b4b4b;
+}
+.blog_all .blog_row .main_blog .comment_area .media .media-body .reply:hover, .blog_all .blog_row .main_blog .comment_area .media .media-body .reply:focus {
+  color: #2d7d9a;
+}
+.blog_all .blog_row .main_blog .reply_comment {
+  border: 0;
+  padding-left: 80px;
+}
+.blog_all .blog_row .main_blog .post_comment {
+  background: #f7f7f7;
+  padding: 15px;
+  display: block;
+  overflow: hidden;
+  padding-bottom: 40px;
+}
+.blog_all .blog_row .main_blog .post_comment h3 {
+  font: 700 14px/1 "nintendoNTLG-DB001", sans-serif;
+  color: #222222;
+  padding-left: 15px;
+  /*text-transform: uppercase;*/
+  padding-bottom: 20px;
+}
+.blog_all .blog_row .main_blog .post_comment .comment_box h4 {
+  font: 400 14px "nintendoNTLG-DB001", sans-serif;
+  color: #222222;
+  padding-bottom: 10px;
+  /*text-transform: uppercase;*/
+  padding-top: 20px;
+}
+.blog_all .blog_row .main_blog .post_comment .comment_box .input_box {
+  border: 1px solid #888;
+  border-radius: 0;
+  box-shadow: none;
+  outline: none;
+  height: 40px;
+}
+.blog_all .blog_row .main_blog .post_comment .comment_box textarea {
+  height: 170px !important;
+  resize: none;
+}
+.blog_all .blog_row .main_blog .post_comment .comment_box button {
+  color: #fefefe;
+  font: 400 14px/40px "nintendoNTLG-DB001", sans-serif;
+  background: #2d7d9a;
+  width: 150px;
+  border: 0;
+  border-radius: 10px;
+  margin-top: 20px;
+  /*text-transform: uppercase;*/
+}
+.blog_all .blog_row .main_blog .post_comment .comment_box button:hover, .blog_all .blog_row .main_blog .post_comment .comment_box button:focus {
+  color: #2d7d9a;
+  background: #222222;
+}
+.blog_all .blog_row .widget_area .resent {
+  padding-bottom: 60px;
+}
+.blog_all .blog_row .widget_area .resent h3 {
+  font: 700 14px/1 "nintendoNTLG-DB001", sans-serif;
+  color: #222222;
+  padding-bottom: 15px;
+}
+.blog_all .blog_row .widget_area .resent .media {
+  margin: 0;
+  padding-bottom: 10px;
+  padding-top: 15px;
+  border-bottom: 1px solid #888;
+}
+.blog_all .blog_row .widget_area .resent .media .media-body a {
+  font: 400 14px/26px "nintendoNTLG-DB001", sans-serif;
+  color: #555555;
+  display: block;
+  margin-top: -7px;
+}
+.blog_all .blog_row .widget_area .resent .media .media-body a:hover, .blog_all .blog_row .widget_area .resent .media .media-body a:focus {
+  color: #2d7d9a;
+}
+.blog_all .blog_row .widget_area .resent .media .media-body h6 {
+  font: 400 14px/26px "nintendoNTLG-DB001", sans-serif;
+  color: #888;
+}
+.blog_all .blog_row .widget_area .resent .architecture {
+  padding: 0;
+}
+.blog_all .blog_row .widget_area .resent .architecture li {
+  list-style: none;
+}
+.blog_all .blog_row .widget_area .resent .architecture li a {
+  font: 400 14px/35px "nintendoNTLG-DB001", sans-serif;
+  color: #555555;
+  border-bottom: 1px solid #555555;
+  display: block;
+}
+.blog_all .blog_row .widget_area .resent .architecture li a:hover, .blog_all .blog_row .widget_area .resent .architecture li a:focus {
+  color: #2d7d9a;
+}
+.blog_all .blog_row .widget_area .resent .architecture li a i {
+  color: #2d7d9a;
+  padding-right: 10px;
+}
+.blog_all .blog_row .widget_area .resent .architecture li:last-child a {
+  border: 0;
+}
+.blog_all .blog_row .widget_area .resent .tag {
+  padding: 0;
+}
+.blog_all .blog_row .widget_area .resent .tag li {
+  list-style: none;
+  display: inline-block;
+}
+.blog_all .blog_row .widget_area .resent .tag li a {
+  border: 1px solid #888888;
+  color: #888;
+  font: 400 14px/30px "nintendoNTLG-DB001", sans-serif;
+  padding: 0 20px;
+  display: inline-block;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+.blog_all .blog_row .widget_area .resent .tag li a:hover, .blog_all .blog_row .widget_area .resent .tag li a:focus {
+  color: #fff;
+  background: #2d7d9a;
+  border: 1px solid #2d7d9a;
+}
+.blog_all .blog_row .widget_area .search {
+  padding-bottom: 60px;
+}
+.blog_all .blog_row .widget_area .search input {
+  border: 1px solid #888;
+  border-radius: 0;
+  height: 40px;
+  box-shadow: none;
+  color: #888;
+  font-size: 14px;
+}
+
+/* End blog area */
+/*--------------------------------------------------*/
+.not_found_area {
+  text-align: center;
+  padding: 100px 0;
+}
+.not_found_area h2 {
+  font: 400 48px/1 "nintendoNTLG-DB001", sans-serif;
+  color: #2d7d9a;
+  /*text-transform: uppercase;*/
+}
+.not_found_area p {
+  font: 400 14px "nintendoNTLG-DB001", sans-serif;
+  color: #555555;
+  padding-top: 50px;
+}
+.not_found_area h1 {
+  font: 700 72px/1 "nintendoNTLG-DB001", sans-serif;
+  color: #2d7d9a;
+  padding-top: 50px;
+  /*text-transform: uppercase;*/
+  padding-bottom: 90px;
+}
+.not_found_area .search_error {
+  position: relative;
+  max-width: 555px;
+  margin: 0 auto;
+}
+.not_found_area .search_error input {
+  border: 1px solid #dfe3e4;
+  box-shadow: none;
+  color: #d3dadf;
+  height: 50px;
+  display: block;
+  border-radius: 0;
+  padding-left: 20px;
+}
+.not_found_area .search_error input.placeholder {
+  color: #d3dadf;
+}
+.not_found_area .search_error input:-moz-placeholder {
+  color: #d3dadf;
+}
+.not_found_area .search_error input::-webkit-input-placeholder {
+  color: #d3dadf;
+}
+.not_found_area .search_error a {
+  line-height: 50px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 50px;
+  color: #d3dadf;
+}
+.not_found_area .search_error:hover a, .not_found_area .search_error:focus a {
+  background: #2d7d9a;
+  color: #fff;
+}
+
+/*--------------------------------------------------*/
+/* Map Css */
+.contact_map iframe {
+  height: 495px;
+  width: 100%;
+}
+
+/* End Map Css */
+/* All contact Info Css */
+.all_contact_info .contact_row {
+  padding: 100px 0;
+}
+.all_contact_info .contact_row .contact_info h2 {
+  font: 700 26px/1 "nintendoNTLG-DB001", sans-serif;
+  color: #222222;
+  padding-bottom: 30px;
+  position: relative;
+}
+.all_contact_info .contact_row .contact_info h2:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 80px;
+  background: #2d7d9a;
+  left: 0;
+  bottom: 0;
+}
+.all_contact_info .contact_row .contact_info p {
+  font: 400 14px/26px "nintendoNTLG-DB001", sans-serif;
+  color: #555555;
+  padding-top: 30px;
+}
+.all_contact_info .contact_row .contact_info .location {
+  padding-top: 55px;
+}
+.all_contact_info .contact_row .contact_info .location a {
+  font: 400 14px/28px "nintendoNTLG-DB001", sans-serif;
+  color: #555555;
+  display: block;
+  /*text-transform: uppercase;*/
+}
+.all_contact_info .contact_row .contact_info .location a:hover, .all_contact_info .contact_row .contact_info .location a:focus {
+  color: #2d7d9a;
+}
+.all_contact_info .contact_row .contact_info .location .f_location {
+  padding-bottom: 30px;
+}
+.all_contact_info .contact_row .contact_info .location .location_laft {
+  width: 98px;
+  float: left;
+}
+.all_contact_info .contact_row .contact_info .location .address a {
+  text-transform: none;
+}
+.all_contact_info .contact_row .send_message .contact_box {
+  padding-top: 30px;
+}
+.all_contact_info .contact_row .send_message .contact_box .input_box {
+  border: 1px solid #dfe3e4;
+  border-radius: 0;
+  box-shadow: none;
+  outline: none;
+  height: 50px;
+  padding-left: 15px;
+  width: 100%;
+  color: #d3dadf;
+  margin-bottom: 20px;
+}
+.all_contact_info .contact_row .send_message .contact_box .input_box.placeholder {
+  color: #d3dadf;
+}
+.all_contact_info .contact_row .send_message .contact_box .input_box:-moz-placeholder {
+  color: #d3dadf;
+}
+.all_contact_info .contact_row .send_message .contact_box .input_box::-webkit-input-placeholder {
+  color: #d3dadf;
+}
+.all_contact_info .contact_row .send_message .contact_box textarea {
+  height: 120px !important;
+  resize: none;
+}
+.all_contact_info .contact_row .send_message .contact_box button {
+  color: #fefefe;
+  font: 400 14px/40px "nintendoNTLG-DB001", sans-serif;
+  background: #2d7d9a;
+  width: 140px;
+  color: #222222;
+  border: 0;
+  border-radius: 0;
+  /*text-transform: uppercase;*/
+}
+.all_contact_info .contact_row .send_message .contact_box button:hover, .all_contact_info .contact_row .send_message .contact_box button:focus {
+  color: #2d7d9a;
+  background: #222222;
+}
+
+/* End All contact Info Css */
+/*--------------------------------------------------*/
+.footer_area {
+  background: url("../images/footer.jpg") no-repeat;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+.footer_area:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  z-index: -1;
+}
+.footer_area .footer_row {
+  padding-top: 95px;
+  padding-bottom: 50px;
+}
+.footer_area .footer_row .footer_about {
+  padding-bottom: 50px;
+}
+.footer_area .footer_row .footer_about h2 {
+  font: 400 18px "nintendo_udsg-r_std_003", sans-serif;
+  /*text-transform: uppercase;*/
+  color: #fff;
+  padding-bottom: 25px;
+}
+.footer_area .footer_row .footer_about img {
+  max-width: 100%;
+}
+.footer_area .footer_row .footer_about p {
+  font: 400 14px/26px "nintendo_udsg-r_std_003", sans-serif;
+  color: #fefefe;
+  padding-top: 22px;
+}
+.footer_area .footer_row .footer_about .socail_icon {
+  padding: 0;
+  margin: 0;
+  padding-top: 25px;
+}
+.footer_area .footer_row .footer_about .socail_icon li {
+  display: inline-block;
+  list-style: none;
+  padding-left: 8px;
+}
+.footer_area .footer_row .footer_about .socail_icon li:first-child {
+  padding: 0;
+}
+.footer_area .footer_row .footer_about .socail_icon li a {
+  border: 2px solid #2d7d9a;
+  display: block;
+  line-height: 26px;
+  width: 30px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.footer_area .footer_row .footer_about .socail_icon li a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: #2d7d9a;
+  z-index: -1;
+  transform: scaleY(0);
+  transform-origin: 50%;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+.footer_area .footer_row .footer_about .socail_icon li a i {
+  font-size: 14px;
+  color: #fff;
+  display: inline-block;
+  padding-top: 7px;
+}
+.footer_area .footer_row .footer_about .socail_icon li a:hover:after, .footer_area .footer_row .footer_about .socail_icon li a:focus:after {
+  transform: scaleY(1);
+}
+.footer_area .footer_row .footer_about .quick_link {
+  padding: 0;
+  margin: 0;
+}
+.footer_area .footer_row .footer_about .quick_link li {
+  list-style: none;
+}
+.footer_area .footer_row .footer_about .quick_link li a {
+  font: 400 14px/28px "nintendoNTLG-DB001", sans-serif;
+  color: #fefefe;
+  position: relative;
+  padding-left: 30px;
+}
+.footer_area .footer_row .footer_about .quick_link li a i {
+  font-size: 14px;
+  color: #2d7d9a;
+  padding-right: 20px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: all 300ms linear 0s;
+}
+.footer_area .footer_row .footer_about .quick_link li a:hover, .footer_area .footer_row .footer_about .quick_link li a:focus {
+  color: #2d7d9a;
+}
+.footer_area .footer_row .footer_about .quick_link li a:hover i, .footer_area .footer_row .footer_about .quick_link li a:focus i {
+  left: 8px;
+}
+.footer_area .footer_row .footer_about .twitter {
+  font: 400 14px/28px "nintendoNTLG-DB001", sans-serif;
+  color: #fefefe;
+  display: block;
+  padding-bottom: 15px;
+}
+.footer_area .footer_row .footer_about .twitter:hover, .footer_area .footer_row .footer_about .twitter:focus {
+  color: #2d7d9a;
+}
+.footer_area .footer_row .footer_about address p {
+  font: 400 14px/28px "nintendoNTLG-DB001", sans-serif;
+  color: #fff;
+  padding: 0;
+}
+.footer_area .footer_row .footer_about address .my_address {
+  padding: 0;
+  margin: 0;
+  padding-top: 15px;
+}
+.footer_area .footer_row .footer_about address .my_address li {
+  list-style: none;
+}
+.footer_area .footer_row .footer_about address .my_address li a {
+  font: 400 14px/28px "nintendoNTLG-DB001", sans-serif;
+  color: #fff;
+}
+.footer_area .footer_row .footer_about address .my_address li a i {
+  color: #2d7d9a;
+  padding-right: 20px;
+  font-size: 14px;
+  display: inline-block;
+}
+.footer_area .footer_row .footer_about address .my_address li a:hover, .footer_area .footer_row .footer_about address .my_address li a:focus {
+  color: #2d7d9a;
+}
+.footer_area .footer_row .footer_about address .my_address li span {
+  display: inline-block;
+  padding-left: 35px;
+  margin-top: -30px;
+}
+.footer_area .copyright_area {
+  background: #090909;
+  font: 400 14px/100px "nintendoNTLG-DB001", sans-serif;
+  color: #fefefe;
+  text-align: center;
+}
+.footer_area .copyright_area a {
+  font-weight: 700;
+  font-size: 14px;
+  /*text-transform: uppercase;*/
+  color: #2d7d9a;
+}
+.footer_area .copyright_area a:hover, .footer_area .copyright_area a:focus {
+  color: #fefefe;
+}
+
+/*--------------------------------------------------*/
+@media (max-width: 1700px) {
+  .slider_area_tow .slider_inner .camera_prev::after {
+    left: 0px !important;
+  }
+
+  .slider_area_tow .slider_inner .camera_next::after {
+    right: 0px !important;
+  }
+
+  .slider_area .slider_inner .camera_next::after {
+    right: 105px;
+  }
+
+  .slider_area .slider_inner .camera_prev::after {
+    left: 105px;
+  }
+}
+@media (max-width: 1199px) {
+  .slider_area .slider_inner .camera_next::after {
+    right: 0px;
+  }
+
+  .slider_area .slider_inner .camera_prev::after {
+    left: 0;
+  }
+
+  .slider_area_tow .slider_inner .camera_caption div .container {
+    max-width: 940px !important;
+  }
+
+  .our_team_area .team_row .team_membar img {
+    height: 330px;
+  }
+
+  .blog_tow_area .blog_tow_row .renovation .renovation_content .date_comment a {
+    padding-right: 30px;
+  }
+}
+@media (max-width: 991px) {
+  .top_header_area .top_nav li a {
+    padding-left: 20px;
+  }
+
+  .header_aera .navbar-collapse .navbar-nav.navbar-right li a {
+    padding-left: 20px;
+  }
+
+  .header_aera .navbar-collapse .navbar-nav.navbar-right li .nav_searchFrom {
+    height: 101px;
+    margin-top: -1px;
+  }
+
+  .header_aera_tow .navbar-collapse .navbar-nav.navbar-right li a {
+    padding-left: 16px;
+  }
+
+  .top_header .top_nav li a {
+    padding-left: 10px;
+  }
+
+  .header_aera_tow .navbar_right_fulid::after {
+    display: none;
+  }
+
+  .top_header_area.top_header {
+    background: #111f29 !important;
+  }
+
+  .top_header_area.top_header .right_top_header::after {
+    display: none;
+  }
+
+  .header_aera_tow {
+    background: #fff !important;
+  }
+
+  .header_aera_tow .navbar_right_fulid {
+    box-shadow: none;
+  }
+
+  .all_header {
+    box-shadow: 0px 0px 40px 0px rgba(21, 47, 95, 0.2);
+  }
+
+  .slider_area .slider_inner .camera_caption div p {
+    max-width: 600px;
+  }
+
+  .our_feature_area .feature_row .feature_img {
+    padding-bottom: 20px;
+  }
+
+  .our_achievments_area .achievments_row .completed {
+    padding-bottom: 30px;
+  }
+
+  .our_achievments_area .achievments_row .completed:nth-child(2) {
+    border: 0;
+  }
+
+  .our_partners_area .book_now_aera .book_now .booking_text p {
+    padding-bottom: 20px;
+  }
+
+  .footer_about.quick {
+    padding-bottom: 70px !important;
+  }
+
+  .slider_area_tow .slider_inner .camera_caption div .container a {
+    margin-bottom: 50px;
+  }
+
+  .slider_area_tow .slider_inner .camera_caption div .container {
+    max-width: 720px !important;
+  }
+
+  .slider_area_tow .slider_inner .camera_caption div {
+    padding-top: 30px;
+  }
+
+  .slider_area_tow .slider_inner .camera_caption div p {
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+
+  .our_skill_inner {
+    padding-top: 30px;
+  }
+
+  .our_partners_area .book_now_aera .book_now .book_bottun a {
+    margin-left: 15px;
+  }
+
+  .building_construction_area .building_construction_row .constructing_laft .ipsum_img {
+    padding-left: 0;
+  }
+
+  .contact_map #map {
+    height: 300px;
+  }
+
+  .blog_all .blog_row .main_blog .blog_content .tag a {
+    margin-bottom: 10px;
+  }
+
+  .blog_all .blog_row .main_blog .blog_content .blog_heading {
+    padding-left: 20px;
+  }
+}
+@media (max-width: 800px) {
+  .slider_area_tow .slider_inner .camera_caption div {
+    right: 0;
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+@media (max-width: 767px) {
+  .top_header_area .top_nav li {
+    display: inline-block;
+  }
+  .top_header_area .top_nav li:first-child a {
+    padding-left: 15px;
+  }
+  .top_header_area .top_nav li a {
+    line-height: 28px;
+  }
+
+  .top_header_area .social_nav {
+    padding-top: 0;
+    padding-bottom: 10px;
+  }
+  .top_header_area .social_nav li {
+    display: inline-block;
+  }
+  .top_header_area .social_nav li:first-child a {
+    margin-left: 0;
+  }
+
+  .navbar-toggle {
+    top: 15px;
+  }
+
+  .header_aera .navbar-header {
+    height: 80px;
+  }
+  .header_aera .navbar-header .navbar-brand {
+    padding-top: 30px;
+  }
+
+  .header_aera .navbar-collapse .navbar-nav.navbar-right li a {
+    line-height: 45px;
+  }
+
+  .header_aera .navbar-collapse .navbar-nav.navbar-right li.submenu ul {
+    padding-left: 30px;
+    background-color: transparent;
+  }
+  .header_aera .navbar-collapse .navbar-nav.navbar-right li.submenu ul li a:hover, .header_aera .navbar-collapse .navbar-nav.navbar-right li.submenu ul li a:focus {
+    color: #2d7d9a;
+  }
+
+  .slider_inner.camera_wrap {
+    height: 500px !important;
+  }
+
+  .about_us_area .about_row .about_client {
+    padding-top: 40px;
+  }
+
+  .what_we_area .construction_iner .construction {
+    max-width: 390px;
+    margin: 0 auto;
+  }
+
+  .our_team_area .team_row .team_membar {
+    max-width: 360px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .our_team_area .team_row .team_membar img {
+    height: auto;
+  }
+
+  .our_achievments_area .achievments_row .completed {
+    border: 0;
+  }
+
+  .latest_blog_area .latest_blog .blog_content {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
+  .footer_about.quick {
+    padding-bottom: 50px !important;
+  }
+
+  .footer_area .footer_row {
+    padding-bottom: 0;
+  }
+
+  .slider_area_tow .slider_inner .camera_caption div .container {
+    max-width: 726px !important;
+  }
+
+  .header_aera_tow .navbar_right_fulid {
+    height: 80px;
+  }
+
+  .top_header_area.top_header {
+    display: none;
+  }
+
+  .header_aera .navbar-collapse .navbar-nav.navbar-right li .nav_searchFrom {
+    height: 45px;
+  }
+
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    background: #fff;
+  }
+
+  .our_services_tow .architecture_area .portfolio_2 .single_facilities img {
+    margin-top: 30px;
+  }
+
+  .our_services_tow .architecture_area .portfolio_filter_2 ul li {
+    width: 33.3333%;
+    border-bottom: 1px solid #dfe3e4;
+  }
+
+  .our_services_tow .architecture_area .portfolio_filter_2 ul li:last-child {
+    border-right: 1px solid #dfe3e4;
+  }
+
+  .our_services_tow .architecture_area .portfolio_filter_2 {
+    border-bottom: 0;
+    border-right: 0;
+  }
+
+  .about_client.about_pages_client {
+    padding-top: 0 !important;
+    padding-bottom: 30px;
+  }
+
+  constructing_right {
+    padding-top: 30px;
+  }
+
+  .blog_tow_area .blog_tow_row .renovation {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
+  .widget_area {
+    padding-top: 60px;
+  }
+
+  .footer_area .footer_row .footer_about address .my_address li span {
+    padding-left: 0;
+  }
+
+  .not_found_area {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .contact_info.send_message {
+    padding-top: 40px;
+  }
+
+  .blog_all .blog_row {
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 689px) {
+  .slider_area .slider_inner .camera_caption div {
+    width: 88%;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  .slider_area .slider_inner .camera_caption div p {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+  .slider_area_tow .slider_inner .camera_caption div .container {
+    max-width: 100% !important;
+  }
+}
+@media (max-width: 546px) {
+  .call_min_area h2 {
+    font-size: 40px;
+  }
+  .call_min_area p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 499px) {
+  .our_services_area .portfolio_inner_area .portfolio_item .single_facilities .single_facilities_inner .gallery_hover {
+    display: none;
+  }
+
+  .our_services_area .portfolio_inner_area .portfolio_filter ul li:first-child {
+    padding-bottom: 10px;
+  }
+
+  .our_services_tow .architecture_area .portfolio_filter_2 ul li {
+    width: 50%;
+  }
+
+  .our_partners_area .partners .item img {
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .call_min_area .call_btn a {
+    display: block;
+    margin: 0 auto;
+  }
+  .call_min_area .call_btn a:first-child {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .blog_all .blog_row .main_blog .client_text .control {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .blog_all .blog_row .main_blog .client_text .control:last-child {
+    border-left: 1px solid #888;
+  }
+
+  .blog_all .blog_row .main_blog .reply_comment {
+    padding-left: 30px;
+  }
+
+  .blog_all .blog_row .main_blog .blog_content .blog_heading {
+    font-size: 20px;
+  }
+}
+@media (max-width: 446px) {
+  .slider_area_tow .slider_inner .camera_caption div {
+    padding-top: 40px;
+  }
+
+  .slider_area_tow .slider_inner .camera_caption div h5 {
+    font-size: 18px;
+  }
+  .slider_area_tow .slider_inner .camera_caption div h3 {
+    font-size: 20px;
+    padding-top: 10px;
+  }
+}
+@media (max-width: 360px) {
+  .slider_area .slider_inner .camera_caption div h3 {
+    font-size: 26px;
+  }
+
+  .what_we_area .construction_iner .construction .cns-content {
+    padding: 0 10px;
+    padding-bottom: 20px;
+  }
+
+  .featured_works .featured_gallery .gallery_iner .gallery_hover {
+    display: none;
+  }
+
+  .footer_area .copyright_area {
+    line-height: 26px;
+    padding: 10px 0;
+  }
+
+  .call_min_area h2 {
+    font-size: 30px;
+  }
+  .call_min_area p {
+    font-size: 16px;
+  }
+
+  .footer_area .footer_row .footer_about address .my_address li span {
+    padding-left: 30px;
+  }
+
+  .blog_all .blog_row .main_blog .blog_content .blog_heading {
+    font-size: 15px;
+  }
+
+  .slider_area_tow .slider_inner .camera_caption div h3 {
+    font-size: 19px;
+    padding-top: 10px;
+  }
+}
+@media (max-width: 320px) {
+  .slider_area_tow .slider_inner .camera_caption div {
+    padding-top: 95px;
+  }
+
+  .slider_area .slider_inner .camera_caption div h3 {
+    font-size: 23px;
+  }
+
+  .building_construction_area .building_construction_row .constructing_laft a {
+    font-size: 22px;
+  }
+
+  .blog_all .blog_row .main_blog .blog_content .blog_heading {
+    font-size: 13px;
+  }
+
+  .slider_area_tow .slider_inner .camera_caption div {
+    padding-top: 60px;
+  }
+
+  .slider_area_tow .slider_inner .camera_caption div h3 {
+    font-size: 18px;
+    padding-top: 10px;
+  }
+}
+/*--------------------------------------------------*/
+
+/*# sourceMappingURL=style.css.map */
