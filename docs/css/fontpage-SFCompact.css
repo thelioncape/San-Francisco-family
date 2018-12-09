@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'SFCompactDisplay-Black';
+    src: url('SF%20Compact/SFCompactDisplay-Black.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SFCompactDisplay-Bold';
+    src: url('SF%20Compact/SFCompactDisplay-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SFCompactDisplay-Heavy';
+    src: url('SF%20Compact/SFCompactDisplay-Heavy.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SFCompactDisplay-Light';
+    src: url('SF%20Compact/SFCompactDisplay-Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SFCompactDisplay-Medium';
+    src: url('SF%20Compact/SFCompactDisplay-Medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SFCompactDisplay-Regular';
+    src: url('SF%20Compact/SFCompactDisplay-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SFCompactDisplay-Semibold';
+    src: url('SF%20Compact/SFCompactDisplay-Semibold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SFCompactDisplay-Thin';
+    src: url('SF%20Compact/SFCompactDisplay-Thin.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SFCompactDisplay-Ultralight';
+    src: url('SF%20Compact/SFCompactDisplay-Ultralight.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
