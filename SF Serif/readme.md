@@ -3,4 +3,4 @@
 It is not installed as default on macOS Mojave and iOS 12. Only used in Apple Book app.
 
 ## License
-You are not allowed to use it elsewhere.
+Your use of the Serif font is subject to the terms of the applicable iOS/macOS/tvOS/watchOS Software License Agreement.
