@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'SFSerif-Display';
+    src: url('SF%20Serif/Serif-UI-Display-BoldItalic.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SFSerif-Display';
+    src: url('SF%20Serif/Serif-UI-Display-SemiboldItalic.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SFSerif-Display';
+    src: url('SF%20Serif/Serif-UI-Display-MediumItalic.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SFSerif-Display';
+    src: url('SF%20Serif/Serif-UI-Display-RegularItalic.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}

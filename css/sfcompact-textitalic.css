@@ -1,0 +1,37 @@
+#output section{font-size:1.2em}
+@font-face {
+    font-family: 'SFCompact-Text';
+    src: url('SF%20Compact/SFCompactText-HeavyItalic.otf') format('opentype');
+    font-weight: 800;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'SFCompact-Text';
+    src: url('SF%20Compact/SFCompactText-BoldItalic.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'SFCompact-Text';
+    src: url('SF%20Compact/SFCompactText-SemiboldItalic.otf') format('opentype');
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'SFCompact-Text';
+    src: url('SF%20Compact/SFCompactText-MediumItalic.otf') format('opentype');
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'SFCompact-Text';
+    src: url('SF%20Compact/SFCompactText-RegularItalic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'SFCompact-Text';
+    src: url('SF%20Compact/SFCompactText-LightItalic.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+}
