@@ -1,37 +1,37 @@
 #output section{font-size:1.2em}
 @font-face {
     font-family: 'SFCompact-Text';
-    src: url('SF%20Compact/SFCompactText-Heavy.otf') format('opentype');
+    src: url('../SF%20Compact/SFCompactText-Heavy.otf') format('opentype');
     font-weight: 800;
     font-style: normal;
 }
 @font-face {
     font-family: 'SFCompact-Text';
-    src: url('SF%20Compact/SFCompactText-Bold.otf') format('opentype');
+    src: url('../SF%20Compact/SFCompactText-Bold.otf') format('opentype');
     font-weight: 700;
     font-style: normal;
 }
 @font-face {
     font-family: 'SFCompact-Text';
-    src: url('SF%20Compact/SFCompactText-Semibold.otf') format('opentype');
+    src: url('../SF%20Compact/SFCompactText-Semibold.otf') format('opentype');
     font-weight: 600;
     font-style: normal;
 }
 @font-face {
     font-family: 'SFCompact-Text';
-    src: url('SF%20Compact/SFCompactText-Medium.otf') format('opentype');
+    src: url('../SF%20Compact/SFCompactText-Medium.otf') format('opentype');
     font-weight: 500;
     font-style: normal;
 }
 @font-face {
     font-family: 'SFCompact-Text';
-    src: url('SF%20Compact/SFCompactText-Regular.otf') format('opentype');
+    src: url('../SF%20Compact/SFCompactText-Regular.otf') format('opentype');
     font-weight: 400;
     font-style: normal;
 }
 @font-face {
     font-family: 'SFCompact-Text';
-    src: url('SF%20Compact/SFCompactText-Light.otf') format('opentype');
+    src: url('../SF%20Compact/SFCompactText-Light.otf') format('opentype');
     font-weight: 300;
     font-style: normal;
 }

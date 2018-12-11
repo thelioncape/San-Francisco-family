@@ -1,24 +1,24 @@
 @font-face {
     font-family: 'SFSerif-Text';
-    src: url('SF%20Serif/Serif-UI-Text-Bold.otf') format('opentype');
+    src: url('../SF%20Serif/Serif-UI-Text-Bold.otf') format('opentype');
     font-weight: 700;
     font-style: normal;
 }
 @font-face {
     font-family: 'SFSerif-Text';
-    src: url('SF%20Serif/Serif-UI-Text-Semibold.otf') format('opentype');
+    src: url('../SF%20Serif/Serif-UI-Text-Semibold.otf') format('opentype');
     font-weight: 600;
     font-style: normal;
 }
 @font-face {
     font-family: 'SFSerif-Text';
-    src: url('SF%20Serif/Serif-UI-Text-Medium.otf') format('opentype');
+    src: url('../SF%20Serif/Serif-UI-Text-Medium.otf') format('opentype');
     font-weight: 500;
     font-style: normal;
 }
 @font-face {
     font-family: 'SFSerif-Text';
-    src: url('SF%20Serif/Serif-UI-Text-Regular.otf') format('opentype');
+    src: url('../SF%20Serif/Serif-UI-Text-Regular.otf') format('opentype');
     font-weight: 400;
     font-style: normal;
 }
