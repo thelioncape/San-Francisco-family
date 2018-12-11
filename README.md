@@ -6,4 +6,4 @@ Compatible with Windows.
 Apple fonts are not meant to be used for commercial purposes outside Apple products. More information can be found [here](https://github.com/windyboy1704/SFPro-JP/blob/master/license.md).
 
 For the **SF Mono** typeface, you are allowed to use it only in Xcode, Terminal.app and Console.app.  
-For the **SF Serif** typeface, you are forbidden to use it.
+For the **SF Serif** typeface, your use of this font is subjected to terms of the applicable iOS/macOS/tvOS/watchOS Software License Agreement.
