@@ -10,3 +10,6 @@ For the **SF Serif** typeface, your use of this font is subjected to terms of th
 
 ## Preview the fonts
 You can visit https://windyboy1704.github.io/San-Francisco-family/ to try out the fonts.
+
+## SF Hello
+This is a rare typeface that only appears in internal Apple presentation PDFs. It is [subset embedded](https://twitter.com/windyboy1704/status/1080109779404578817). In order to obtain **SF Hello**, you must be a member of [Apple Sales Website](https://asw.apple.com) - which is impossible for regular users.
