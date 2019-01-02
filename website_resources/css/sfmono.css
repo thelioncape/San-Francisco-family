@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'SFMono';
+    src: url('../../SF%20Mono/SF-Mono-Heavy.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SFMono';
+    src: url('../../SF%20Mono/SF-Mono-HeavyItalic.otf') format('opentype');
+    font-weight: 800;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'SFMono';
+    src: url('../../SF%20Mono/SF-Mono-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SFMono';
+    src: url('../../SF%20Mono/SF-Mono-BoldItalic.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'SFMono';
+    src: url('../../SF%20Mono/SF-Mono-Semibold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SFMono';
+    src: url('../../SF%20Mono/SF-Mono-SemiboldItalic.otf') format('opentype');
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'SFMono';
+    src: url('../../SF%20Mono/SF-Mono-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SFMono';
+    src: url('../../SF%20Mono/SF-Mono-MediumItalic.otf') format('opentype');
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'SFMono';
+    src: url('../../SF%20Mono/SF-Mono-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SFMono';
+    src: url('../../SF%20Mono/SF-Mono-RegularItalic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'SFMono';
+    src: url('../../SF%20Mono/SF-Mono-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SFMono';
+    src: url('../../SF%20Mono/SF-Mono-LightItalic.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+}
