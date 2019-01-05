@@ -1,0 +1,3 @@
+# Contributing
+If **SF Hello** isn't counted, this repository is complete. It is only updated whenever a newer version of the fonts is found in the official source. Therefore, there is no _Issue_ tab.  
+You are free to contribute to this repository, but only in **SF Hello** folder. If you find new glyphs (especially in new Apple presentation PDFs), or \*_shh_\* `you are an authorized Apple reseller`, please make a pull request, and it must be in valid font type format (OpenType, TrueType, WOFF/2, or CFF format). I will check the legitimacy of your font file, and if it's OK I will merge it to my version.
