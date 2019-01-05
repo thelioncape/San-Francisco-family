@@ -15,4 +15,4 @@ You can visit https://windyboy1704.github.io/San-Francisco-family/ to try out th
 
 ## SF Hello
 This is a rare font that only appears in internal Apple presentation PDFs, and it is [subset embedded](https://twitter.com/windyboy1704/status/1080109779404578817). In order to obtain **SF Hello**, you must be a member of [Apple Sales Website](https://asw.apple.com) - which is impossible for regular users.  
-I managed to extract some of its subset and convert to OTF filetype. My plan is to take all of its weight variant (Bold, Semibold, Medium, Light), then I will do a comparison between **SF** (or **SF Pro** in this repository) and **SF Hello**. At first glance, they are quite simillar, only different in kerning. For now, **SF Hello** is a mixture of **SF** Display and Text.
+I managed to extract some of its subset and converted to OpenType. My plan is to take all of its weight variant (Bold, Semibold, Medium, Light), then I will do a comparison between **SF** (or **SF Pro** in this repository) and **SF Hello**. At first glance, they are quite simillar, only different in kerning. For now, **SF Hello** is a mixture of **SF** Display and Text.
