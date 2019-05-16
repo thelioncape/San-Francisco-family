@@ -12,7 +12,7 @@ http://www.templatemo.com/preview/templatemo_460_medigo
 body {
   background: white;
   font-size: 16px;
-  font-family: "PT Serif", Georgia, serif;
+  font-family: "SFPro-Text", -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: normal;
   font-style: normal;
   line-height: 28px;
@@ -24,7 +24,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color: #31373a;
-  font-family: "Raleway", sans-serif;
+  font-family: "SFPro-Display", -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: normal;
 }
 
@@ -202,7 +202,7 @@ a, a:visited {
   font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
-  font-family: "Raleway", sans-serif;
+  font-family: "SFPro-Text", -apple-system, BlinkMacSystemFont, sans-serif;
   padding: 5px 15px;
   display: block;
   -webkit-border-radius: 3px;
@@ -276,7 +276,7 @@ a.menu-toggle-btn i {
 }
 .main_menu li a {
   font-size: 14px;
-  font-family: "Raleway", sans-serif;
+  font-family: "SFPro-Text", -apple-system, BlinkMacSystemFont, sans-serif;
   color: #bfbfbf;
   font-weight: 500;
 }
@@ -343,7 +343,7 @@ a.menu-toggle-btn i {
 .large-button {
   padding: 15px 20px;
   font-size: 12px;
-  font-family: "Raleway", sans-serif;
+  font-family: "SFPro-Text", -apple-system, BlinkMacSystemFont, sans-serif;
   text-transform: uppercase;
   font-weight: 800;
   -webkit-border-radius: 2px;
@@ -361,7 +361,7 @@ a.large-button.white-color {
 .main-button {
   padding: 12px 15px;
   font-size: 12px;
-  font-family: "Raleway", sans-serif;
+  font-family: "SFPro-Text", -apple-system, BlinkMacSystemFont, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   -webkit-border-radius: 2px;
@@ -1289,7 +1289,7 @@ blockquote {
   background-color: #f1f4f5;
   padding: 100px 0;
   color: #aaaaaa;
-  font-family: "Raleway", sans-serif;
+  font-family: "SFPro-Text", -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 .footer-menu li {
